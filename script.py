@@ -153,7 +153,19 @@ def homepage():
 
 @app.route("/analysis")
 def analysis():
+<<<<<<< HEAD
     return "analysis"
+=======
+    return render_template("analysis.html")
+
+@app.route("/yesbank")
+def yesbank():
+    return render_template("yesbank.html")
+
+@app.route("/bsesn")
+def bsesn():
+    return render_template("BSESN.html")
+>>>>>>> 4a478e9 (Final Frontend commit)
 
 if __name__ == '__main__':
     app.run(debug=True)
