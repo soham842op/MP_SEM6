@@ -39,19 +39,21 @@
     </nav>
     <!-- Masthead-->
     <header class="masthead">
-        <div class="container px-4 px-lg-5 h-100" style="background-image: url({{url_for('static', filename='img/bg.jpg')}});">
+        <div class="container px-4 px-lg-5 h-100" >
             <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-8 align-self-end">
                     <h1 class="text-white font-weight-bold; text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;">StockIQ</h1>
                     <hr class="divider" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white-75 mb-5; text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;">Invest with Intelligence: Where Stock Market Meets IQ</p>
+                    <p class="text-white mb-5; text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;">Invest with Intelligence: Where Stock Market Meets IQ</p>
                     <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
                 </div>
             </div>
         </div>
     </header>
+    
+    
     <!-- About-->
     <section class="page-section bg-primary" id="about">
         <div class="container px-4 px-lg-5">
@@ -103,10 +105,10 @@
         </div>
     </section>
     <!-- Portfolio-->
-    <div id="portfolio" style="color: black;">
+    <div id="portfolio" style="background-color: black;">
         <div class="container-fluid p-0">
-            <table>
-                <tr>
+            <table >
+                <tr height="100px" width="500px">
                   <th><div class="row g-0">
                     <div>
                         <a class="portfolio-box" href="{{ url_for('static', filename='img/img/portfolio/fullsize/1.jpg') }}" title="Project Name">
@@ -136,7 +138,7 @@
                     </a>
                 </div></th>
                 </tr>
-                <tr>
+                <tr height="100px" width="500px">
                   <td><div>
                     <a class="portfolio-box" href="{{ url_for('static', filename='img/img/portfolio/fullsize/4.jpeg') }}" title="Project Name">
                         <img class="img-fluid" src="{{ url_for('static', filename='img/img/portfolio/thumbnails/4.jpeg') }}" width="500px" height="100px"  alt="..." />
@@ -175,7 +177,7 @@
     <section class="page-section bg-dark text-white">
         <div class="container px-4 px-lg-5 text-center">
             <h2 class="mb-4">Want to get Started?</h2>
-            <a class="btn btn-light btn-xl" >Register Now!</a>
+            <a class="btn btn-light btn-xl"  href="{{ url_for('login') }}">Register Now!</a>
         </div>
     </section>
     <!-- Contact-->
